@@ -27,20 +27,8 @@
 		"stylus"
     ],
     "ignore": [
-		".appveyor.yml",
-		".editorconfig",
-		".eslintrc",
-		".github",
-		".gitignore",
-		".sasslintrc",
-		".travis.yml",
-		"backstop.conf.js",
-		"bower.json",
-		"changelog.md",
-		"composer.json",
-		"package.js",
-		"package.json",
-		"src",
-		"test"
-	]
+        ".package.json",
+        "index.html",
+        "README.md"
+    ]
 }

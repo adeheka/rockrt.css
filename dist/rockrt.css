@@ -382,8 +382,7 @@ h6{
 }
 
 .row .column {
-  display: block;
-  flex: 1 1 auto;
+  display: flex;
   margin-left: 0;
   max-width: 100%;
   width: 100%;
@@ -492,6 +491,76 @@ h6{
   -ms-grid-row-align: center;
       align-self: center;
 }
+
+/* Navbar */
+.navbar{
+  background-color: #f9f9f9;
+  height: 60px;
+  display: flex;
+  padding: 20px 30px;
+}
+
+.navbar.sticky{
+  position: sticky;
+  top: 0;
+}
+
+.navbar-title{
+  font-weight: bold;
+}
+
+.navbar-title >  img{
+  width: 100px;
+}
+
+.navbar-link{
+  margin-left: 0px;
+}
+
+.navbar-link > a{
+  margin: 20px;
+}
+
+.navbar-link.right{
+  margin-left: auto;
+}
+
+.navbar-link.left{
+  margin-right: auto;
+}
+
+.navbar-link.center{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar.round{
+  margin: 20px;
+  border-radius: 50px;
+}
+
+/* Images */
+
+.img.round{
+  border-radius: 10px;
+}
+.img.circle{
+  border-radius: 300px;
+
+}
+.img.thumbnail{
+  border: 1px solid #b1b1b1;
+  border-radius: 5px;
+  padding: 5px;
+}
+.img.img.thumbnail:hover, .img.img.thumbnail:focus{
+  box-shadow: 0 0 10px #b1b1b1;
+}
+
+/* Cards */
+
+
+
 
 @media (min-width: 640px) {
   .row {

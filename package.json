@@ -1,7 +1,7 @@
 {
     "name": "rockrtcss",
-	"version": "1.0.1",
-	"description": "A minimalist CSS framework.",
+	"version": "1.1.2",
+	"description": "A minimal CSS framework.",
 	"repository": "https://github.com/adecancode/rockrt.css",
 	"license": "MIT",
 	"author": "Adebayo Temitope <adecancode@gmail.com>",
@@ -28,7 +28,6 @@
     ],
     "ignore": [
         ".package.json",
-        "index.html",
         "README.md"
     ]
 }

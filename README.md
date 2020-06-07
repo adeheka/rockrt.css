@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/r5Z6s1D/Logo-1.jpg)
+![Logo](https://i.ibb.co/Cz4Ddc8/Logo-2.jpg)
 
 ## Why Rockrt
 

@@ -2,7 +2,7 @@
 
 ## Why Rockrt?
 
-Rockrt is a minimal framework for a fast, responsive and clean design and UI, Designed for a better perfomance and productivity with light weight properties to bring out your code in a clean UI. Enjoy and don't forget to share with devs!
+Rockrt is a minimal library for a fast, responsive and clean design and UI, Designed for a better perfomance and productivity with light weight properties to bring out your code in a clean UI. Enjoy and don't forget to share with devs!
 
 ## Download
 

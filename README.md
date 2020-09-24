@@ -1,15 +1,26 @@
 ![Logo](https://i.ibb.co/q0wHWC2/Logo-3.jpg)
 
-## Why Rockrt?
+## Why Rockrt
 
 Rockrt is a minimal library for a fast, responsive and clean design and UI, Designed for a better perfomance and productivity with light weight properties to bring out your code in a clean UI. Enjoy and don't forget to share with devs!
 
-## Download
+## Usage
 
-**Install with npm**
+### **Install with npm**
 
 ```sh
-$ npm i rockrtcss
+$  npm i rockrtcss
+```
+
+### **CDN directory**
+
+- In the HTML file include
+
+```html
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rockrtcss@1.1.4/dist/rockrt.min.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rockrtcss@1.1.4/dist/rockrt.css">
 ```
 
 ## Documentation
@@ -29,4 +40,3 @@ adecancode@gmail.com
 
 Made with ❤️ in Nigeria by [adecancode](https://twitter.com/adecancode)
 Licensed under the MIT license.
-

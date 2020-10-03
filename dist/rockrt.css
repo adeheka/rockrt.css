@@ -634,35 +634,35 @@ input[type='radio'] {
     width: 100%;
 }
 
-.rkt-column.rkt-column-no-padding {
+.rkt-column.column-no-padding {
     padding: 0;
 }
 
-.rkt-column.rkt-column-no-padding>.rkt-row {
+.rkt-column.column-no-padding>.rkt-row {
     padding: 0;
 }
 
-.rkt-column.rkt-column-wrap {
+.rkt-column.column-wrap {
     flex-wrap: wrap;
 }
 
-.rkt-column.rkt-column-top {
+.rkt-column.column-top {
     align-items: flex-start;
 }
 
-.rkt-column.rkt-column-bottom {
+.rkt-column.column-bottom {
     align-items: flex-end;
 }
 
-.rkt-column.rkt-column-center {
+.rkt-column.column-center {
     align-items: center;
 }
 
-.rkt-column.rkt-column-stretch {
+.rkt-column.column-stretch {
     align-items: stretch;
 }
 
-.rkt-column.rkt-column-baseline {
+.rkt-column.column-baseline {
     align-items: baseline;
 }
 
@@ -673,110 +673,110 @@ input[type='radio'] {
     width: 100%;
 }
 
-.rkt-column .rkt-row.rkt-row-offset-10 {
+.rkt-row.row-offset-10 {
     margin-left: 10%;
 }
 
-.rkt-column .rkt-row.rkt-row-offset-20 {
+.rkt-row.row-offset-20 {
     margin-left: 20%;
 }
 
-.rkt-column .rkt-row.rkt-row-offset-25 {
+.rkt-row.row-offset-25 {
     margin-left: 25%;
 }
 
-.rkt-column .rkt-row.rkt-row-offset-33,
-.rkt-column .rkt-row.rkt-row-offset-34 {
+.rkt-row.row-offset-33,
+.rkt-row.row-offset-34 {
     margin-left: 33.3333%;
 }
 
-.rkt-column .rkt-row.rkt-row-offset-50 {
+.rkt-row.row-offset-50 {
     margin-left: 50%;
 }
 
-.rkt-column .rkt-row.rkt-row-offset-66,
-.rkt-column .rkt-row.rkt-row-offset-67 {
+.rkt-row.row-offset-66,
+.rkt-row.row-offset-67 {
     margin-left: 66.6666%;
 }
 
-.rkt-column .rkt-row.rkt-row-offset-75 {
+.rkt-row.row-offset-75 {
     margin-left: 75%;
 }
 
-.rkt-column .rkt-row.rkt-row-offset-80 {
+.rkt-row.row-offset-80 {
     margin-left: 80%;
 }
 
-.rkt-column .rkt-row.rkt-row-offset-90 {
+.rkt-row.row-offset-90 {
     margin-left: 90%;
 }
 
-.rkt-column .rkt-row.rkt-row-10 {
+.rkt-row.row-10 {
     flex: 0 0 10%;
     max-width: 10%;
 }
 
-.rkt-column .rkt-row.rkt-row-20 {
+.rkt-row.row-20 {
     flex: 0 0 20%;
     max-width: 20%;
 }
 
-.rkt-column .rkt-row.rkt-row-25 {
+.rkt-row.row-25 {
     flex: 0 0 25%;
     max-width: 25%;
 }
 
-.rkt-column .rkt-row.rkt-row-33,
-.rkt-column .rkt-row.rkt-row-34 {
+.rkt-row.row-33,
+.rkt-row.row-34 {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
 }
 
-.rkt-column .rkt-row.rkt-row-40 {
+.rkt-row.row-40 {
     flex: 0 0 40%;
     max-width: 40%;
 }
 
-.rkt-column .rkt-row.rkt-row-50 {
+.rkt-row.row-50 {
     flex: 0 0 50%;
     max-width: 50%;
 }
 
-.rkt-column .rkt-row.rkt-row-60 {
+.rkt-row.row-60 {
     flex: 0 0 60%;
     max-width: 60%;
 }
 
-.rkt-column .rkt-row.rkt-row-66,
-.rkt-column .rkt-row.rkt-row-67 {
+.rkt-row.row-66,
+.rkt-row.row-67 {
     flex: 0 0 66.6666%;
     max-width: 66.6666%;
 }
 
-.rkt-column .rkt-row.rkt-row-75 {
+.rkt-row.row-75 {
     flex: 0 0 75%;
     max-width: 75%;
 }
 
-.rkt-column .rkt-row.rkt-row-80 {
+.rkt-row.row-80 {
     flex: 0 0 80%;
     max-width: 80%;
 }
 
-.rkt-column .rkt-row.rkt-row-90 {
+.rkt-row.row-90 {
     flex: 0 0 90%;
     max-width: 90%;
 }
 
-.rkt-column .rkt-row .rkt-row-top {
+.rkt-row .row-top {
     align-self: flex-start;
 }
 
-.rkt-column .rkt-row .rkt-row-bottom {
+.rkt-row .row-bottom {
     align-self: flex-end;
 }
 
-.rkt-column .rkt-row .rkt-row-center {
+.rkt-row .row-center {
     -ms-grid-row-align: center;
     align-self: center;
 }
@@ -786,10 +786,11 @@ input[type='radio'] {
 
 .navbar {
     background-color: #f9f9f9;
-    height: 60px;
+    min-height: 18vh;
+    height: auto;
     z-index: 1;
     display: flex;
-    padding: 20px 30px;
+    padding: 15px 20px;
 }
 
 .navbar.sticky {
@@ -798,7 +799,8 @@ input[type='radio'] {
 }
 
 .navbar-title {
-    font-weight: bold;
+    font-weight: 700;
+    float: left;
 }
 
 .navbar-title>img {
@@ -834,12 +836,13 @@ input[type='radio'] {
 
 /* Images */
 
-.img.round {
-    border-radius: 10px;
+img {
+    height: auto;
+    width: 100%;
 }
 
-.img.circle {
-    border-radius: 300px;
+.img.round {
+    border-radius: 50%;
 }
 
 .img.thumbnail {

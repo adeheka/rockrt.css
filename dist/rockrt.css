@@ -99,7 +99,7 @@ h6 {
 
 p {
     margin: 0em 0em 1em;
-    line-height: 1.4285em;
+    line-height: 1.4580em;
     font-size: 14px;
 }
 
@@ -120,7 +120,7 @@ a {
 }
 
 a:hover {
-    color: var(--blue);
+    color: var(--light-black);
     text-decoration: none;
 }
 
@@ -175,9 +175,9 @@ input[type='submit'].primary {
 .rkt-btn.primary:hover,
 .rkt-btn.primary:focus {
     background-color: var(--light-blue);
-    opacity: 0.8;
+    opacity: 0.7;
     border-radius: 12px;
-    transition: 1000ms;
+    transition: 2000ms;
 }
 
 .rkt-btn.dark-norm,
@@ -627,156 +627,156 @@ input[type='radio'] {
 
 /* Grid */
 
-.row {
+.rkt-column {
     display: flex;
     flex-direction: column;
     padding: 0;
     width: 100%;
 }
 
-.row.row-no-padding {
+.rkt-column.rkt-column-no-padding {
     padding: 0;
 }
 
-.row.row-no-padding>.column {
+.rkt-column.rkt-column-no-padding>.rkt-row {
     padding: 0;
 }
 
-.row.row-wrap {
+.rkt-column.rkt-column-wrap {
     flex-wrap: wrap;
 }
 
-.row.row-top {
+.rkt-column.rkt-column-top {
     align-items: flex-start;
 }
 
-.row.row-bottom {
+.rkt-column.rkt-column-bottom {
     align-items: flex-end;
 }
 
-.row.row-center {
+.rkt-column.rkt-column-center {
     align-items: center;
 }
 
-.row.row-stretch {
+.rkt-column.rkt-column-stretch {
     align-items: stretch;
 }
 
-.row.row-baseline {
+.rkt-column.rkt-column-baseline {
     align-items: baseline;
 }
 
-.row .column {
+.rkt-row {
     display: flex;
     margin-left: 0;
     max-width: 100%;
     width: 100%;
 }
 
-.row .column.column-offset-10 {
+.rkt-column .rkt-row.rkt-row-offset-10 {
     margin-left: 10%;
 }
 
-.row .column.column-offset-20 {
+.rkt-column .rkt-row.rkt-row-offset-20 {
     margin-left: 20%;
 }
 
-.row .column.column-offset-25 {
+.rkt-column .rkt-row.rkt-row-offset-25 {
     margin-left: 25%;
 }
 
-.row .column.column-offset-33,
-.row .column.column-offset-34 {
+.rkt-column .rkt-row.rkt-row-offset-33,
+.rkt-column .rkt-row.rkt-row-offset-34 {
     margin-left: 33.3333%;
 }
 
-.row .column.column-offset-50 {
+.rkt-column .rkt-row.rkt-row-offset-50 {
     margin-left: 50%;
 }
 
-.row .column.column-offset-66,
-.row .column.column-offset-67 {
+.rkt-column .rkt-row.rkt-row-offset-66,
+.rkt-column .rkt-row.rkt-row-offset-67 {
     margin-left: 66.6666%;
 }
 
-.row .column.column-offset-75 {
+.rkt-column .rkt-row.rkt-row-offset-75 {
     margin-left: 75%;
 }
 
-.row .column.column-offset-80 {
+.rkt-column .rkt-row.rkt-row-offset-80 {
     margin-left: 80%;
 }
 
-.row .column.column-offset-90 {
+.rkt-column .rkt-row.rkt-row-offset-90 {
     margin-left: 90%;
 }
 
-.row .column.column-10 {
+.rkt-column .rkt-row.rkt-row-10 {
     flex: 0 0 10%;
     max-width: 10%;
 }
 
-.row .column.column-20 {
+.rkt-column .rkt-row.rkt-row-20 {
     flex: 0 0 20%;
     max-width: 20%;
 }
 
-.row .column.column-25 {
+.rkt-column .rkt-row.rkt-row-25 {
     flex: 0 0 25%;
     max-width: 25%;
 }
 
-.row .column.column-33,
-.row .column.column-34 {
+.rkt-column .rkt-row.rkt-row-33,
+.rkt-column .rkt-row.rkt-row-34 {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
 }
 
-.row .column.column-40 {
+.rkt-column .rkt-row.rkt-row-40 {
     flex: 0 0 40%;
     max-width: 40%;
 }
 
-.row .column.column-50 {
+.rkt-column .rkt-row.rkt-row-50 {
     flex: 0 0 50%;
     max-width: 50%;
 }
 
-.row .column.column-60 {
+.rkt-column .rkt-row.rkt-row-60 {
     flex: 0 0 60%;
     max-width: 60%;
 }
 
-.row .column.column-66,
-.row .column.column-67 {
+.rkt-column .rkt-row.rkt-row-66,
+.rkt-column .rkt-row.rkt-row-67 {
     flex: 0 0 66.6666%;
     max-width: 66.6666%;
 }
 
-.row .column.column-75 {
+.rkt-column .rkt-row.rkt-row-75 {
     flex: 0 0 75%;
     max-width: 75%;
 }
 
-.row .column.column-80 {
+.rkt-column .rkt-row.rkt-row-80 {
     flex: 0 0 80%;
     max-width: 80%;
 }
 
-.row .column.column-90 {
+.rkt-column .rkt-row.rkt-row-90 {
     flex: 0 0 90%;
     max-width: 90%;
 }
 
-.row .column .column-top {
+.rkt-column .rkt-row .rkt-row-top {
     align-self: flex-start;
 }
 
-.row .column .column-bottom {
+.rkt-column .rkt-row .rkt-row-bottom {
     align-self: flex-end;
 }
 
-.row .column .column-center {
+.rkt-column .rkt-row .rkt-row-center {
     -ms-grid-row-align: center;
     align-self: center;
 }
@@ -863,12 +863,12 @@ mark {
 }
 
 @media (min-width: 640px) {
-    .row {
+    .rkt-column {
         flex-direction: row;
         margin-left: -1.0rem;
         width: calc(100% + 2.0rem);
     }
-    .row .column {
+    .rkt-column .rkt-row {
         margin-bottom: inherit;
         padding: 0 1.0rem;
     }
@@ -913,7 +913,7 @@ ul {
     list-style: square inside;
 }
 
-.rkt.btn,
+.rkt-btn,
 dd,
 dt,
 li {

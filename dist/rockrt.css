@@ -625,11 +625,23 @@ input[type='radio'] {
 }
 
 
+/* fixing default styles*/
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
 /* Grid */
 
 .rkt-column {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     padding: 0;
     width: 100%;
 }
@@ -646,28 +658,30 @@ input[type='radio'] {
     flex-wrap: wrap;
 }
 
-.rkt-column.column-top {
+.align-top {
     align-items: flex-start;
 }
 
-.rkt-column.column-bottom {
+.align-bottom {
     align-items: flex-end;
 }
 
-.rkt-column.column-center {
+.align-center {
     align-items: center;
 }
 
-.rkt-column.column-stretch {
+.align-stretch {
     align-items: stretch;
 }
 
-.rkt-column.column-baseline {
+.align-baseline {
     align-items: baseline;
 }
 
 .rkt-row {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     margin-left: 0;
     max-width: 100%;
     width: 100%;
@@ -875,7 +889,7 @@ img {
     width: 100%;
 }
 
-.img.round {
+.img-round {
     border-radius: 50%;
 }
 
@@ -1051,8 +1065,17 @@ img {
 .rkt-card {
     height: auto;
     margin: 20px 35px;
-    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.2);
-    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
     flex: 1 0 250px;
-    padding: 10px;
+    padding: 20px 18px;
+    position: relative;
+}
+
+.card-img-attached {
+    display: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
 }

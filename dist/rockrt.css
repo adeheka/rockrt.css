@@ -786,11 +786,12 @@ input[type='radio'] {
 
 .navbar {
     background-color: #f9f9f9;
-    min-height: 18vh;
-    height: auto;
+    min-height: 5vh;
     z-index: 1;
     display: flex;
     padding: 15px 20px;
+    display: grid;
+    place-content: space-between;
 }
 
 .navbar.sticky {
@@ -805,6 +806,15 @@ input[type='radio'] {
 
 .navbar-title>img {
     width: 100px;
+}
+
+.navbar-items {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.navbar-items * {
+    padding: 10px;
 }
 
 .navbar-link {
@@ -865,6 +875,9 @@ mark {
     border-radius: 10px;
 }
 
+
+/*media queries for all tablet screen size and above*/
+
 @media (min-width: 640px) {
     .rkt-column {
         flex-direction: row;
@@ -875,6 +888,13 @@ mark {
         margin-bottom: inherit;
         padding: 0 1.0rem;
     }
+    .navbar {
+        grid-template-columns: auto auto;
+    }
+    .navbar-items {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
 
 a {
@@ -884,7 +904,7 @@ a {
 
 a:focus,
 a:hover {
-    color: var(--blue)8A;
+    color: var(--blue);
 }
 
 dl,
@@ -908,26 +928,29 @@ ul ul {
     margin: 1.5rem 0 1.5rem 3.0rem;
 }
 
+dt {
+    list-style: decimal;
+}
+
 ol {
-    list-style: decimal inside;
+    list-style: disc inside;
 }
 
 ul {
     list-style: square inside;
 }
 
-.rkt-btn,
 dd,
 dt,
 li {
-    margin-bottom: 1.0rem;
+    margin-bottom: 0.5rem;
 }
 
 fieldset,
 input,
 select,
 textarea {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
 }
 
 blockquote,
@@ -983,4 +1006,20 @@ img {
 
 .flr {
     float: right;
+}
+
+.h-25 {
+    height: 25%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.h-100 {
+    height: 100%;
 }

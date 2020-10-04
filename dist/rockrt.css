@@ -768,17 +768,41 @@ input[type='radio'] {
     max-width: 90%;
 }
 
-.rkt-row .row-top {
+.rkt-row.row-top {
     align-self: flex-start;
 }
 
-.rkt-row .row-bottom {
+.rkt-row.row-bottom {
     align-self: flex-end;
 }
 
-.rkt-row .row-center {
+.rkt-row.row-center {
     -ms-grid-row-align: center;
     align-self: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-top {
+    justify-content: flex-start;
+}
+
+.justify-bottom {
+    justify-content: flex-end;
+}
+
+.justify-base {
+    justify-content: baseline;
 }
 
 
@@ -1022,4 +1046,13 @@ img {
 
 .h-100 {
     height: 100%;
+}
+
+.rkt-card {
+    height: auto;
+    margin: 20px 35px;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    flex: 1 0 250px;
+    padding: 10px;
 }
